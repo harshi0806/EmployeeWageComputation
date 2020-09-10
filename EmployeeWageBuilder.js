@@ -43,6 +43,7 @@ function calculateWage() {
         let empDailyWage = getEmpWage();
         let empTotalWage = getMonthlyWages();
         totalWorkingDays++;
+    console.log("Employee total working days: " + totalWorkingDays);
     console.log("Employee daily wage: " + empDailyWage);
     console.log("Employee total wage: " + empTotalWage);    
     }
