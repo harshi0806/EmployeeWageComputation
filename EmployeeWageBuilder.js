@@ -1,11 +1,16 @@
-const IS_PRESENT = 1;
+const IS_FULL_TIME = 1;
+const IS_PART_TIME = 2;
 const WAGE_PER_HOUR = 20;
-var empAttendance = Math.floor(Math.random() * 10) % 2;
+var empAttendance = Math.floor(Math.random() * 10) % 3;
 var workingHours, empWage;
 function calculateDailyWage() {
-    if (empAttendance == IS_PRESENT) {
-        console.log("Employee is Present.");
+    if (empAttendance == IS_FULL_TIME) {
+        console.log("Employee is Present for Full time.");
         workingHours = 8;
+    }
+    else if (empAttendance == IS_PART_TIME){
+        console.log("Employee is Present for Part time.");
+        workingHours = 4;
     }
     else {
         console.log("Employee is Absent.");
