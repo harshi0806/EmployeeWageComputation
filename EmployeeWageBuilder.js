@@ -1,3 +1,6 @@
+var message = "Welcome to Employee Wage Computation Program!";
+console.log(message);
+
 const IS_FULL_TIME = 1;
 const IS_PART_TIME = 2;
 const EMP_RATE_PER_HOUR = 20;
@@ -39,7 +42,9 @@ function calculateWage() {
     while (totalEmpHour <= MAX_HOURS_IN_MONTH && totalWorkingDays < MIN_NUM_WORKING_DAYS) {
         let empDailyWage = getEmpWage();
         let empTotalWage = getMonthlyWages();
-        totalWorkingDays++;    
+        totalWorkingDays++;
+    console.log("Employee daily wage: " + empDailyWage);
+    console.log("Employee total wage: " + empTotalWage);    
     }
 }
 calculateWage();
